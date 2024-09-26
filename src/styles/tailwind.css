@@ -2,6 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img {
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
 
+  @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+  :root {
+    --font_size_h2lg: 85px;
+    --font_size_h3lg: 55px;
+    --font_size_pxl: 25px;
+    --font_size_h2md: 65px;
+    --font_size_h3md: 45px;
+    --font_size_p: 20px;
+
+    --color_pink: #e28ca7;
+    --color_red: #de3828;
+    --color_black: #0b0a0c;
+    --color_grey: #cdcdcd;
+    --color_white: #e7e5d9;
+  }
+
+  .inter-light {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+  }
+
+  .inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+  }
+
+  .inter-black {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+  }
+
+  html {
+    color: var(--color_red);
+    background-color: var(--color_white);
+  }
+
+  h2 {
+    font-size: var(--font_size_h3md);
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: var(--font_size_p);
+  }
+  a {
+    cursor: pointer;
+    transition: all 0.55s ease;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  h2 {
+    font-size: var(--font_size_h2md);
+  }
+
+  h3 {
+    font-size: var(--font_size_h3md);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: var(--font_size_h2lg);
+  }
+
+  h3 {
+    font-size: var(--font_size_h3lg);
+  }
+  p {
+    font-size: var(--font_size_pxl);
+  }
 }

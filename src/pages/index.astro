@@ -1,15 +1,19 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+	<section>
+		<h2 class="inter-black">about</h2>
+		<h3 class="inter-light">Nora Skjevik</h3>
+		<p class="inter-regular">Jag heter Nora Skjevik, är 24 år och studerar mediadesign på KEA. Design och webdesign är stora passioner för mig – jag tycker att det är både kul, uppfriskande och inspirerande att fördjupa mig i. Det jag gillar mest är design som har en riktig "wow-faktor," som får folk att tänka till och som kan inspirera andra. När jag inte studerar älskar jag att vara ute i naturen, särskilt vid havet, oavsett årstid.</p>
+
+		<h3>Korta faktan om mig</h3>
+<ul class="pl-5">
+	<li>Positiv till  mycket</li>
+	<li>Naturvän som mår bäst i havet</li>
+	<li>Ett fan av serieböcker och tecknad film</li>
+</ul>
+	</section>
+		
 </MainLayout>
