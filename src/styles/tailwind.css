@@ -94,6 +94,18 @@
   li {
     font-size: var(--font_size_pmd);
   }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+  }
 }
 
 @layer utilities {

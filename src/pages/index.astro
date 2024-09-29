@@ -4,27 +4,28 @@ import Button from '../components/Button.astro';
 ---
 
 <MainLayout title="Titel">
-	<svg id="scrollArrow" width="24" height="0" viewBox="0 0 24 1202" fill="none" xmlns="http://www.w3.org/2000/svg" class="fixed left-1/2 top-0 transform -translate-x-1/2 text-red-500">
+	  <section class="max-w-6xl mx-auto md:grid grid-cols-2 fade-in">
+<div class="pt-28"><h1 class="inter-black pl-10">Nora Skjevik</h1>
+<p class="inter-regular w-[300px] md:w-[500px]">Jag heter Nora Skjevik, är 24 år och studerar multimediadesign med inriktning på digitaldesign på KEA. Den här profilen är till för att du ska kunna lära känna mig bättre, se mina tidigare arbeten och ta del av de färdigheter jag utvecklat under utbildningens gång.</p>
+<a href="#läsmer"><Button /></a>
+</div>
+<img class="pl-14 max-h-[599px]" src="/norapan.png" alt="Norapan">
+	  </section>
+	  <svg id="scrollArrow" width="24" height="0" viewBox="0 0 24 1202" fill="none" xmlns="http://www.w3.org/2000/svg" class="fixed left-1/2 top-0 transform -translate-x-1/2 text-red-500">
 		<path d="M10.9393 1201.06C11.5251 1201.65 12.4749 1201.65 13.0607 1201.06L22.6066 1191.51C23.1924 1190.93 23.1924 1189.98 22.6066 1189.39C22.0208 1188.81 21.0711 1188.81 20.4853 1189.39L12 1197.88L3.51472 1189.39C2.92893 1188.81 1.97919 1188.81 1.3934 1189.39C0.807611 1189.98 0.807611 1190.93 1.3934 1191.51L10.9393 1201.06ZM10.5 0L10.5 1200H13.5L13.5 0L10.5 0Z" fill="#DE3828"/>
 	  </svg>
-	  <section class="max-w-6xl mx-auto md:grid grid-cols-2">
-<div class="pt-28"><h1 class="inter-black pl-10">Nora Skjevik</h1>
-<p class="inter-regular w-[300px] md:w-[500px]">Jag heter Nora Skjevik, är 24 år och studerar multimediadesign med inriktning på digitaldesign på KEA. Den här profilen är till för att du ska kunna lära känna mig bättre, se mina tidigare arbeten och ta del av de färdigheter jag utvecklat under utbildningens gång.</p></div>
-<img src="/norapan.png" alt="Norapan">
-	  </section>
-
-	<h2 class="inter-black pl-10">about</h2>
-	<section class="max-w-6xl mx-auto">
+	<h2 id="about" class="inter-black pl-10">about</h2>
+	<section id="läsmer" class="max-w-6xl mx-auto">
 	<article class="grid md:grid-cols-2 space-x-16">
 	  <div>
-		<h3 class="inter-light pt-10">Nora Skjevik</h3>
+		<h3 class="inter-light md:pt-10">Nora Skjevik</h3>
 		<p class="inter-regular w-[300px] md:w-[500px]">
-		  Jag heter Nora Skjevik, är 24 år och studerar mediadesign på KEA. Design och webdesign är stora passioner för mig – jag tycker att det är både kul, uppfriskande och inspirerande att fördjupa mig i. Det jag gillar mest är design som har en riktig "wow-faktor," som får folk att tänka till och som kan inspirera andra. När jag inte studerar älskar jag att vara ute i naturen, särskilt vid havet, oavsett årstid.
+		  Jag heter Nora Skjevik, är 24 år och studerar mediadesign på KEA. Design och webdesign är stora passioner för mig, jag tycker att det är både kul, uppfriskande och inspirerande att fördjupa mig i. Det jag gillar mest är design som har en riktig "wow-faktor," som får folk att tänka till och som kan inspirera andra.</p> <p class="inter-regular w-[300px] md:w-[500px] pt-5">När jag inte studerar älskar jag att vara ute i naturen, särskilt vid havet, oavsett årstid.
 		</p>
 	  </div>
 	  <div>
 		<h3 class="pt-10">Korta faktan om mig</h3>
-		<ul class="pl-5 list-disc">
+		<ul class="md:pl-5 list-disc">
 		  <li>Positiv till mycket</li>
 		  <li>Naturvän som mår bäst i havet</li>
 		  <li>Ett fan av serieböcker och tecknad film</li>
@@ -36,8 +37,7 @@ import Button from '../components/Button.astro';
 		<img src="/rednor.png" alt="nora">
 	</article>
 </section>
-
-	<h2 class="inter-black pl-10">skills</h2>
+	<h2 id="skills" class="inter-black pl-10">skills</h2>
 	<section class="grid grid-cols-2 max-w-6xl mx-auto pb-14">
 	<div class="space-y-14 p-7 load">
 			  <div class="h-[4px] w-[100%] bg-red lg:w-[393px] scale-in-tl"></div>
@@ -60,8 +60,8 @@ import Button from '../components/Button.astro';
 <p>JavaScript</p>
 	  </div>
 	</section>
-	<section class="relative h-[500vh] pb-14">
-		<h2 class="font-black pl-10 pb-10">previous projects</h2>
+	<section class="relative h-[500vh]">
+		<h2 id="previous" class="font-black pl-10 pb-10">previous projects</h2>
 		<div class="sticky top-0 w-full h-screen object-cover z-10">
 		  <img class="w-full h-full object-cover" src="/dragongurl.webp" alt="Verksamhetssite">
 		  <div class="absolute inset-0 flex items-center justify-center">
