@@ -10,6 +10,9 @@ export default {
         greys: "#cdcdcd",
         whyte: "#e7e5d9",
       },
+      cursor: {
+        handcursor: "url(/cursor.png) 25 25, pointer",
+      },
     },
   },
   plugins: [],

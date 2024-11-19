@@ -1,6 +1,6 @@
 ---
 ---
-<div x-data="{ showmenu: false }" class="p-4 fixed top-0 w-full z-20 bg-red/5 fade-in">
+<div x-data="{ showmenu: false }" class="p-4 fixed top-0 w-full bg-red/5 fade-in z-50">
     <div id="navbar" class="flex flex-row">
         <div id="logo">
             <a href="/">
@@ -9,9 +9,9 @@
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
             <ul class="flex flex-row gap-24 pt-3 pl-28">
-                <li class="hover:opacity-75"><a href="#about">ABOUT</a></li>
-                <li class="hover:opacity-75"><a href="#skills">SKILLS</a></li>
-                <li class="hover:opacity-75"><a href="#previous">PREVIOUS PROJECTS</a></li>
+            <li class="hover:opacity-75"><a href="#about">about</a></li>
+            <li class="hover:opacity-75"><a href="#skills">skills</a></li>
+            <li class="hover:opacity-75"><a href="#previous">previous projects</a></li>
             </ul>
         </nav>
         <button id="burgermenu" class="pt-5 fixed right-8 pr-4 lg:hidden hover:opacity-75" x-on:click="showmenu = ! showmenu">Menu</button>
@@ -19,9 +19,9 @@
     <nav id="mobilmenu" class="fixed right-8 flex flex-col content-center pt-2" 
         x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul>
-            <li class="hover:opacity-75"><a href="#about">ABOUT</a></li>
-            <li class="hover:opacity-75"><a href="#skills">SKILLS</a></li>
-            <li class="hover:opacity-75"><a href="#previous">PREVIOUS PROJECTS</a></li>
+            <li class="hover:opacity-75"><a href="#about">about</a></li>
+            <li class="hover:opacity-75"><a href="#skills">skills</a></li>
+            <li class="hover:opacity-75"><a href="#previous">previous projects</a></li>
         </ul>
     </nav>
 </div>
